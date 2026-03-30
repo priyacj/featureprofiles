@@ -11,6 +11,8 @@ platform_exceptions: {
   }
   deviations: {
     ipv4_missing_enabled: true
+    skip_sampling_qos_counters: true
+    qos_ft: "ciscoxr-qos-ft"
   }
 }
 platform_exceptions: {
@@ -28,7 +30,6 @@ platform_exceptions: {
   }
   deviations: {
     interface_enabled: true
-    explicit_port_speed: true
     explicit_interface_in_default_vrf: true
     qos_octets: true
   }
@@ -39,5 +40,6 @@ platform_exceptions: {
   }
   deviations: {
     interface_enabled: true
+    qos_get_state_path_unsupported: true
   }
 }
